@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丹尼斯的窩</title>
+    <!-- 引入 css -->
+    <link href="style/main.css" rel="stylesheet">
+    <!-- 引入 Bootstrap icon-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar-light deprecated in 5.2 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://getbootstrap.com/" target="_blank">
+                <img src="docs/assets/static/bootstrap-logo.svg" alt="profile picture" width="30" height="24">
+                Powered by Bootstrap 5.3.2
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 18px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" >
+                            <i class="bi bi-house"></i>
+                            Home 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="bi bi-file-earmark-person"></i>
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 18px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" target="_blank" href="https://github.com/Dennis40816" style="font-size: 25px;">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" target="_blank" href="https://www.facebook.com/profile.php?id=100003915342542&locale=zh_TW" style="font-size: 25px;">
+                            <i class="bi bi-meta"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="vr d-none d-lg-flex h-150 mx-3 text-white"></div>
+
+            <div>
+                <form class="d-flex bg-white rounded-pill" role="search">
+                    <input class="form-control border-0 rounded-pill" type="text" value="search" id="example-search-input">
+                    <span class="input-group-append">
+                        <button class="btn border-0 rounded-pill ms-n3" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </span>
+                </form>
+            </div>
+
+            <div class="ms-2" href="#">
+                <img src="docs/assets/static/personal-logo.png" alt="personal logo" class="rounded-circle">
+            </div>
+        </div>
+    </nav>
+    
+    <div class="nav-margin"></div>
+
+    <div class="container mt-5 pt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center my-4">About me...</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mt-3 mb-5">
+                    <h4 class="card-header">0x00 簡介</h4>
+                    <div class="card-body">
+                        哈囉! 我叫劉尚賢，由於英文名稱是 Dennis ，所以大家都習慣叫我丹尼斯。
+                        是一位熱愛寫程式和各式資訊技術的研究生，雖然我目前主修機械，但主要以嵌入式開發為主。目前定居在
+                        <a style="text-decoration:none" href="https://www.google.com/maps/place/205%E5%9F%BA%E9%9A%86%E5%B8%82%E6%9A%96%E6%9A%96%E5%8D%80/@25.0829933,121.7064288,13z/data=!3m1!4b1!4m6!3m5!1s0x345d51bc0f44510b:0x300c7f48a7f8ab1f!8m2!3d25.0836163!4d121.748042!16s%2Fm%2F0yt2qx2?entry=ttu">
+                            <i class="bi bi-geo-alt"></i>
+                            台灣基隆市暖暖區
+                        </a>
+                        ，雖然心情常常被基隆的…”好”天氣影響，但請相信我，我是一個輕鬆又好相處的人~
+                        <br><br>
+                        目前最喜歡的程式語言是 C++，雖然它年代悠久、複雜又古板，標準庫都 2024 年了都還沒把網路部分收納進來，周邊工具又多又雜，讓人感覺喜歡它的我是個受虐狂，但我從它的身上學習到了程式運作的基礎原理，感受到了程式豐富的多樣性以及有了電腦凡事都能的感覺。我想，這就是我這麼喜歡它的原因吧!
+                    </div>
+                </div>
+
+                <div class="card mt-3 mb-5">
+                    <h4 class="card-header">0x01 個人特質</h4>
+                    <div class="card-body">
+                        <ul>
+                            <li class="mb-md-3">
+                                <h5>共情能力</h5>
+                                由於我很長在腦內有很多小劇場，因此也比較容易站到自己的對立面去思考問題。如此讓我對他人的行為舉止的理解能力較強。
+                            </li>
+                            <li class="mb-md-3">
+                                <h5>慢熱</h5>
+                                身為理工研究生的一員，我的個性比較內斂，與其說是害羞，更像是需要觀察一個人的觀察期比較長。在觀察期結束之前，我會扮演一個安靜聆聽者去盡可能判斷這個人的行為處事，最終才決定是否與之深交。
+                            </li>
+                            <li class="mb-md-3">
+                                <h5>喜愛教學</h5>
+                                雖然上面提到我比較慢熱，但一旦涉及到教學，尤其使教導他人程式相關的課題時，我會變得積極主動，因為我在剛學習程式時也遇到過許多瓶頸。
+                                例如環境變數設錯、安裝路徑等基礎課題，往往是阻止新手繼續往前的關卡。看到受困的人，我就會想到從前花了許多時間破關的我，因此會不由自主地想幫助他們，讓他們學習的過程能夠更加平穩，及早體驗到寫程式的快樂。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card mt-3 mb-5">
+                    <h4 class="card-header">0x02 愛做的事</h4>
+                    <div class="card-body">
+                        <ul>
+                            <li class="mb-md-3">
+                                <h5>遊戲</h5>
+                                我從小就很喜歡玩遊戲，基本上射擊、Dota和戰略遊戲都玩過蠻長的時間，現在比較常打 LOL 的 ARAM。
+                            </li>
+                            <li class="mb-md-3">
+                                <h5>音樂</h5>
+                                雖然對樂理和看譜幾乎都一竅不通，但是還是喜歡在獨處時放聲高歌。
+                            </li>
+                            <li class="mb-md-3">
+                                <h5>泡溫泉</h5>
+                                最近才發現的事情，隨著年齡漸長，身體有時候會有僵硬的感覺，但泡完溫泉後會感覺通體舒暢，又可以再戰十<del>年</del>天。
+                            </li>
+                            <li class="mb-md-3">
+                                <h5>讀小說</h5>
+                                作為從小就比較文靜的人，閱讀也佔據了我小時候許多的時光，我閱讀的主題五花八門，但是我最喜歡的便是武俠還有偵探小說。武俠小說中我最喜歡金庸以及古龍，而偵探小說則涵蓋福爾摩斯、亞森羅蘋、東野圭吾和阿嘉莎等知名作家。
+                                讀書能安靜我的心，也短暫將我抽離這繁雜的世界，於我而言閱讀能使我陪伴書中的主角，與他們一起體驗生活。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-3 mb-5">
+                    <h4 class="card-header">0x03 學習經歷</h4>
+                    <div class="card-body">
+                        <ul>
+                            <li>碇內國小</li>
+                            <li>碇內國中</li>
+                            <li>松山高中</li>
+                            <li>國立清華大學動力機械工程學系-畢業</li>
+                            <li>國立清華大學動力機械工程所-在讀</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-3 mb-5">
+                    <h4 class="card-header">0x04 最愛的程式工具</h4>
+                    <div class="card-body row row-cols-4 justify-content-center">
+                        <div class="card border-0 " style="width: 18rem;">
+                                <div>
+                                    <a href="https://code.visualstudio.com/" target="_blank">
+                                        <img src="docs/assets/static/VSCode.png" class="card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">VS Code</h5>
+                                        <p class="card-text">由微軟開發的免費編輯器，因為其高自由度和強大功能目前是我最常用的程式編輯器。</p>
+                                        
+                                    </div>
+                                    <div class="card-footer bg-white border-0">
+                                        <span class="badge rounded-pill text-bg-primary">Editor</span>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card border-0 " style="width: 18rem;">
+                            <div>
+                                <a href="https://gcc.gnu.org/" target="_blank">
+                                    <img src="docs/assets/static/GNU.png" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">GNU Compiler</h5>
+                                    <p class="card-text">古老的編譯器，像是藏在深窖中的陳年佳釀，需要花時間東翻西找才有機會體驗他的美好。</p>
+                                    
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <span class="badge rounded-pill text-bg-secondary">Compiler</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 " style="width: 18rem;">
+                            <div>
+                                <a href="https://cmake.org/" target="_blank">
+                                    <img src="docs/assets/static/CMake.png" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">CMake</h5>
+                                    <p class="card-text">一個跨平台的 C/C++ 編譯套件，能夠讓你的 C/C++ 專案在各平台都順利編譯。</p>
+                                    
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <span class="badge rounded-pill text-bg-info">Toolchain</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0" style="width: 18rem;">
+                            <div>
+                                <a href="https://github.com/" target="_blank">
+                                    <img src="docs/assets/static/github.svg" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Github</h5>
+                                    <p class="card-text">保命工具，可以很好地管理程式，並整合 CI/CD 確保每次上傳的程式都能通過測試。</p>
+                                    
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <span class="badge rounded-pill text-bg-warning">Code manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3 mb-5">
+                    <h4 class="card-header">0x05 近期規劃</h4>
+
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="docs/assets/static/rust_2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>學習 Rust 語言</h5>
+                              <p>Rust 是近幾年興起的程式語言，能夠自動管理記憶體的生命週期，該語言非常的年輕，因此借鑒了許多語言走過的彎路。
+                                <br>藉由學習 Rust 也可重新複習從前學習過的演算法。
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="docs/assets/static/HAND_1.png"class="d-block w-100" alt="alt">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>開發 Haptic Assistance Navigation Device (HAND)</h5>
+                              <p>HAND 是一款盲人輔助系統，將結合超聲波感測器、ESP32和手機共同建構一個觸覺輔助導航系統。</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="https://github.com/eclipse-iceoryx/iceoryx" target="_blank">
+                                <img src="docs/assets/static/iceoryx.png" class="d-block w-100" alt="alt">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>More Open Source Contribution!</h5>
+                                  <p>我預計在畢業前更多的來投入開源專案，一方面觀察各專案裡面在CI/CD如何整合，一邊磨練開發軟體時的技巧與直覺!
+                                    <br>圖中是名為 "iceoryx" 的專案，是一款車用中間件(整合 sensor, algorithm and controller)，透過共用記憶體來實現進程間通信 (IPC)，
+                                    <br>並結合發布/訂閱機制等技術來實現傳輸零複製，消除資料傳輸性能瓶頸。
+                                  </p>
+                                </div>
+                            </a>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 引入 Bootstrap JavaScript -->
+    <!-- WTF -->
+    <!-- <script src="node_modules/@popperjs/core/dist/cjs/popper.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

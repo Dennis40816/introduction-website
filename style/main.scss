@@ -1,0 +1,40 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// self defined
+.rounded-circle {
+    width: 40px;  // 控制圖片的寬度
+    height: 40px; // 控制圖片的高度
+    object-fit: cover; // 確保圖片填滿圓形區域
+}
+
+.bg-navbar {
+  background-color: #009dff;
+}
+
+.nav-margin {
+    margin-top: 70px;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* 黑色遮罩，半透明 */
+  color: white; /* 文字顏色 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// overload
+.card-img-top {
+  height: 260px; /* 或您想要的任何固定高度 */
+}
