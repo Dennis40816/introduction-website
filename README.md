@@ -1,3 +1,6 @@
 # Side Project - Self Introduction Website
 
-## Powered by Bootstrap 5.3.2
+## How to activate this demo website
+
+1. npm install
+2. ./node_modules/.bin/http-server -a localhost -p 8000 -c-1
