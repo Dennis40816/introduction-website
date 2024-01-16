@@ -5,7 +5,8 @@
     <title>3D Model Display</title>
     <!-- CSS -->
     <link href="style/main.css" rel="stylesheet">
-    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- ES import -->
     <script type="importmap">
         {
           "imports": {
@@ -13,256 +14,62 @@
             "three/gltfLoader": "https://unpkg.com/three@v0.160.0/examples/jsm/loaders/GLTFLoader.js"
           }
         }
-      </script>
-    <style>
-        body { margin: 0; }
-        #pcb-gltf-model { width: 100%; height: 100vh; display: block; }
-    </style>
+    </script>
 </head>
 <body>
-    <div class="scroll-watcher"></div>
-    <div id="pcb-gltf-model"></div>
-    <div>Why Grammarly
 
-        For Work
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+
+            <section class="home-cover mt-md-3 col-11" id="home-cover">
+
+                <div class="half-page d-flex flex-column justify-content-center">
+                        <div class="h1 ms-md-2 mb-md-0"> Hi there, my name is</div>
+                        <div class="main-title">
+                            <div class="wrap-align-start">
+                                <div>SHANG HSIEN,</div>
+                                <div class="blue">LIU</div>
+                            </div>
+                        </div>
+                </div>
+    
+                <div class="half-page row m-md-3">
+                    <div class="col-10 pt-md-5" id="brief">
+                        <div class="row subtitle">A Taiwanese graduate student studying in Power Mechanical Engineering.</div>
+                        <div class="row subtitle">An embedded system enthusiast and creator.</div>
+                        <div class="row subtitle">An open-source contributor.</div>
+                    </div>
+                    <div class="col-2 d-flex wrap-align-center">
+                        <div class="d-flex flex-column wrap-align-center">
+                            <div class="circle" style="--order:1;"></div>
+                            <div class="circle" style="--order:2;"></div>
+                            <div class="circle" style="--order:3;"></div>
+                            <div class="circle" style="--order:4;"></div>
+                            <div class="circle" style="--order:5;"></div>
+                            <div class="caret"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="who-am-i">
+                <!-- nav -->
+                <div>vv</div>
+            </section>
+
+        </div>
         
-        For Education
-        Compare Plans
+
+    </div>
+
+    <div id="pcb-display">
+        <div class="col-md" id="pcb-gltf-model"></div>
         
-        Tools & Guides
-        Log in
-        
-        Writing
-        Product
-        Company
-        Real-time suggestions, wherever you write.
-        Real-time suggestions, wherever you write.
-        Share on Facebook
-        Share on Twitter
-        Share on Linkedin
-        Share via email
-        Share via Facebook Messenger
-        What Are Articles in Grammar? Definition and Examples
-        Grammarly
-        Grammarly
-        Updated on September 23, 2022
-        GRAMMAR
-        
-        What are articles?
-        Articles are words that identify a noun as being specific or unspecific. Consider the following examples:
-        
-        After the long day, the cup of tea tasted particularly good.
-        
-        By using the article the, we’ve shown that it was one specific day that was long and one specific cup of tea that tasted good.
-        
-        After a long day, a cup of tea tastes particularly good.
-        
-        By using the article a, we’ve created a general statement, implying that any cup of tea would taste good after any long day.
-        
-        
-        Here’s a tip: Want to make sure your writing shines? Grammarly can check your spelling and save you from grammar and punctuation mistakes. It even proofreads your text, so your work is extra polished wherever you write.
-        
-        Your writing, at its best
-        Grammarly helps you communicate confidently
-        WRITE WITH GRAMMARLY
-        English has two types of articles: definite and indefinite. Let’s discuss them now in more detail.
-        
-        The definite article
-        The definite article is the word the. It limits the meaning of a noun to one particular thing. For example, your friend might ask, “Are you going to the party this weekend?” The definite article tells you that your friend is referring to a specific party that both of you already know about. The definite article can be used with singular, plural, or uncountable nouns. Below are some examples of the definite article, the, used in context:
-        
-        Please give me the hammer.
-        Please give me the red hammer; the blue one is too small.
-        Please give me the nails.
-        Please give me the large nail; it’s the only one strong enough to hold this painting
-        Please give me the hammer and the nails.
-        The indefinite article
-        The indefinite article takes two forms. It’s the word a when it precedes a word that begins with a consonant sound. It’s the word an when it precedes a word that begins with a vowel sound. The indefinite article indicates that a noun refers to a general idea or category of a thing rather than a specific thing. 
-        
-        For example, you might ask your friend, “Should I bring a gift to the party?” Your friend will understand that you are not asking about a specific type of gift or a specific item. “I am going to bring an apple pie,” your friend tells you. Again, the indefinite article indicates that she is not talking about a particular apple pie. Your friend probably doesn’t even have any pie yet. The indefinite article appears only with singular nouns. Consider the following examples of indefinite articles used in context:
-        
-        Please hand me a book; any book will do.
-        Please hand me an autobiography; any autobiography will do.
-        More examples: Using a or an
-        As mentioned, the rule is to use a before words that start with a consonant sound and an before words that begin with a vowel sound. This can be tricky because some words that start with consonants don’t start with a consonant sound; the same is true of some words that start with vowels. The first letter of the word honor, for example, is a consonant, but it’s unpronounced. Despite its spelling, the word honor begins with a vowel sound. Therefore, we use an. Consider the example sentence below for an illustration of this concept.
-        
-        Incorrect: My mother is a honest woman.
-        
-        Correct: My mother is an honest woman.
-        
-        Similarly, when the first letter of a word is a vowel but is pronounced with a consonant sound, use a, as in the sample sentence below:
-        
-        Incorrect: She is an United States senator.
-        
-        Correct: She is a United States senator.
-        
-        This holds true for acronyms and initialisms too: an LCD display, a UK-based company, an HR department, a URL.
-        
-        An article before an adjective
-        Sometimes an article modifies a noun that is also modified by an adjective. The usual word order is article + adjective + noun. If the article is indefinite, use a or an based on the word that immediately follows it. Consider the following examples for reference:
-        
-        Eliza will bring a small gift to Sophie’s party.
-        I heard an interesting story yesterday.
-        Indefinite articles with uncountable nouns
-        Uncountable nouns are nouns that are impossible to count, whether because they name intangible concepts (e.g., information, animal husbandry, wealth), collections of things that are considered as wholes (e.g., jewelry, equipment, the working class), or homogeneous physical substances(e.g., milk, sand, air). Although most of these nouns are singular in form, because they refer to things that can’t be isolated and counted, they never take a or an. Uncountable nouns can be modified by indefinite adjectives like some, however. Consider the examples below for reference:
-        
-        Incorrect: Please give me a water.
-        
-        Water is an uncountable noun and should not be used with the indefinite article.
-        
-        Correct: Please give me some water.
-        
-        If you describe the water in terms of a countable unit (like a bottle), you can use the indefinite article to modify the unit.
-        
-        Correct: Please give me a bottle of water.
-        
-        Incorrect: Please give me an ice.
-        
-        Correct: Please give me an ice cube.
-        
-        Correct: Please give me some ice.
-        
-        Note that depending on the context, some nouns can be countable or uncountable (e.g., hair, noise, time):
-        
-        Correct: We need a light in this room.
-        
-        Correct: We need some light in this room.
-        
-        Using articles with pronouns
-        Possessive pronouns—words like his, my, our, its, her, and their—can help identify whether you’re talking about specific or nonspecific items. As we’ve seen, articles also indicate specificity. But if you use both a possessive pronoun and an article together, readers will become confused. Articles should not be used with pronouns. Consider the examples below:
-        
-        Incorrect: Why are you reading the my book?
-        
-        The and my should not be used together, as they are both identifying the same noun. Instead, choose one or the other depending on the intended meaning:
-        
-        Correct: Why are you reading the book?
-        
-        Correct: Why are you reading my book?
-        
-        Omission of articles
-        Occasionally, articles are omitted altogether before certain nouns. In these cases, the article is implied but not actually present. This implied article is sometimes called a “zero article.” Often, the article is omitted before a noun that refers to an abstract idea. Look at the following examples:
-        
-        Incorrect: Let’s go out for a dinner tonight.
-        
-        Correct: Let’s go out for dinner tonight.
-        
-        Incorrect: The creativity is a valuable quality in children.
-        
-        Correct: Creativity is a valuable quality in children.
-        
-        Tip: The words for many languages and nationalities are not preceded by an article. 
-        
-        Incorrect: I studied the French in high school for four years.
-        
-        Correct: I studied French in high school for four years.
-        
-        Tip: Sports and academic subjects do not require articles. 
-        
-        Incorrect: I like to play the baseball.
-        
-        Correct: I like to play baseball.
-        
-        Incorrect: My sister was always good at the math.
-        
-        Correct: My sister was always good at math.
-        
-        Article FAQs
-        What is an article?
-        An article is a word that comes before a noun to show whether it’s specific or general. Specific nouns use the article the and general nouns use the article a (or an, if the next word starts with a vowel sound). 
-        
-        What are definite and indefinite articles?
-        The definite article refers to something specific, and the indefinite article refers to something general. The is the definite article and a/an is the indefinite article.
-        
-        What is an example of an article in grammar?
-        “The hammer” refers to only one hammer, but “a hammer” refers to any hammer. 
-        
-        When should we not use articles?
-        We don’t use the indefinite article with uncountable nouns, or any article with a possessive pronoun. Certain nouns such as nationalities, school subjects, and sports often don’t take articles, especially when they refer to general or abstract ideas. 
-        
-        Your writing, at its best.
-        Works on all your favorite websites
-        iPhone and iPad KeyboardAndroid KeyboardChrome BrowserSafari BrowserFirefox BrowserEdge BrowserWindows OSMicrosoft Office
-        Related Articles
-        
-        GRAMMAR
-        Simple Sentence: Meaning and Examples
-        
-        GRAMMAR
-        What Is a Non Sequitur? Definition and Examples
-        
-        GRAMMAR
-        What Is a Compound Subject in Grammar? Meaning and Examples
-        
-        GRAMMAR
-        How to Use a Possessive Apostrophe
-        
-        GRAMMAR
-        “I Couldn’t Care Less” vs. “I Could Care Less”—Which Is Correct?
-        
-        GRAMMAR
-        What Are Root Words? Lists and Examples
-        Writing, grammar, and communication tips for your inbox.
-        Your email...
-        Get Grammarly
-        Grammarly for Your Desktop
-        Grammarly for Windows
-        Grammarly for Mac
-        Grammarly Browser Extension
-        Grammarly for Chrome
-        Grammarly for Safari
-        Grammarly for Firefox
-        Grammarly for Edge
-        Grammarly for MS Office
-        Grammarly for Google Docs
-        Grammarly for Mobile
-        Grammarly for iPhone
-        Grammarly for iPad
-        Grammarly for Android
-        Learn More
-        Plans
-        Grammarly Premium
-        Grammarly Business
-        Grammarly for Education
-        Generative AI
-        Blog
-        Tech Blog
-        Education Blog
-        Business Blog
-        Features
-        Grammar Checker
-        Plagiarism Checker
-        Citation Generator
-        Essay Checker
-        Paraphrasing Tool
-        AI Writing Tools
-        Tone Detector
-        Style Guide
-        Snippets
-        Analytics
-        Brand Tones
-        Company
-        About
-        Responsible AI
-        Careers & Culture
-        Press
-        Affiliates
-        Partners
-        Trust Center
-        Privacy Policy
-        Terms of Service
-        Customer Business Agreement
-        CA Privacy Notice
-        Security
-        Accessibility
-        Connect
-        Help Center
-        Contact Us
-         Facebook
-         Instagram
-         X
-         LinkedIn
-        2024 © Grammarly Inc.</div>
+    </div>
 
     <!-- script import -->
     <script type="module" src="/src/main.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

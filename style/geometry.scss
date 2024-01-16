@@ -1,0 +1,24 @@
+.circle {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: fillCircle 2.5s infinite;
+    animation-delay: calc(var(--order) * 0.3s);
+}
+
+@keyframes fillCircle {
+    0%, 80% { background-color: transparent; }
+    40% { background-color: white; }
+}
+
+.caret {
+    border: solid white;
+    border-width: 0 0.6rem 0.6rem 0; /* 調整至 5rem 大小的箭頭 */
+    display: inline-block;
+    padding: 0.8rem;
+    margin-top: 10px;
+    transform: rotate(45deg);
+}

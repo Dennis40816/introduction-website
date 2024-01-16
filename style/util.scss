@@ -1,0 +1,33 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.blue-200 {
+    color: $blue-200;
+}
+
+.blue {
+    color: $blue-400;
+}
+
+.wrap-align-center {
+    @extend .align-items-center;
+    @extend .justify-content-center;
+}
+
+.wrap-align-end {
+    @extend .align-items-center;
+    @extend .justify-content-end;
+}
+
+.wrap-align-start {
+    @extend .align-items-center;
+    @extend .justify-content-start;
+}
+
+.half-page {
+    min-height: 50vh;
+}
+
+.full-page {
+    @extend .min-vh-100;
+}

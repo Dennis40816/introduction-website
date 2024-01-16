@@ -1,17 +1,54 @@
-.scroll-watcher {
-    height: 10px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background-color: skyblue;
-    width: 100%;
-    scale: 0 1;
-    transform-origin: left;
-    animation: scroll-watcher linear;
-    animation-timeline: scroll();
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./font.scss";
+@import "./util.scss";
+@import "./geometry.scss";
+@import "./animate.scss";
+
+:root {
+    --main-bg-color: black;
+    --card-bg-color: #2f4f4f;
+    --main-text-color: white;
 }
 
-@keyframes scroll-watcher
-{
-    to {scale: 1 1;}
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+///////////////////////////////////////////////////
+///                 Private                     ///
+///////////////////////////////////////////////////
+
+// home cover
+.home-cover {
+    background-color: var(--main-bg-color);
+    @extend .full-page;
+}
+
+.home-cover .main-title {
+    @extend .d-flex;
+    @extend .title-text-extreme-large;
+    @extend .text-bold;
+}
+
+.home-cover .tail {
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .align-items-end;
+    @extend .justify-content-end;
+}
+
+.home-cover .cover-img {
+    z-index: $zindex-fixed;
+}
+
+// who am i
+.who-am-i {
+    @extend .full-page;
+}
+
+// three display
+#pcb-gltf-model {
+    color: var(--main-font-color);
+    display: block;
 }

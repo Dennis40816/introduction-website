@@ -9,7 +9,7 @@ function initThreeScene(element_id)
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.set(0, 0, 3.5);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: true});
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById(element_id).appendChild(renderer.domElement);
 
@@ -79,7 +79,6 @@ function setupAnimation(model, renderer, scene, camera) {
         }
     
         renderer.render(scene, camera);
-        console.log(currentSpeedX, currentSpeedY);
     }
     animate();
 }
