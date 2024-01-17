@@ -29,7 +29,7 @@
                         <div class="main-title">
                             <div class="wrap-align-start">
                                 <div>SHANG HSIEN,</div>
-                                <div class="blue">LIU</div>
+                                <div class="blue-400">LIU</div>
                             </div>
                         </div>
                 </div>
@@ -53,19 +53,67 @@
                 </div>
             </section>
 
-            <section class="who-am-i">
-                <!-- nav -->
-                <div>vv</div>
+
+            <!-- make sticky on <body> directly -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-5" id="navbar">
+                <div class="container-fluid d-flex">
+                    <a href="#top" class="col-3 navbar-btn" id="home_btn">Home</a>
+                    <a href="#about" class="col-3 navbar-btn" id="about-btn">About</a>
+                    <a href="#experience" class="col-3 navbar-btn" id="experience-btn">Experience</a>
+                    <a href="#contact" class="col-3 navbar-btn" id="contact-btn">Contact</a>
+                </div>
+            </nav>
+            <div id="navbar-placeholder"></div>
+
+
+            <section class="about mt-5 pt-5" id="about">
+                <div class="subtitle d-flex justify-content-center text-bold">About Me</div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 mt-3 ps-0 about-card">
+                        <div class="row">
+                          <div class="col-md-5 overflow-hidden img-parent-element">
+                            <img src="assets/pic/self-photo.png" class="img-fluid" alt="self-photo">
+                          </div>
+                          <div class="col-md-7">
+                            <div class="card-body p-5">
+                              <h5 class="subtitle text-bold">B</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                
             </section>
+                
+
+            <section class="experience mt-5 pt-5" id="experience">
+                <div class="subtitle d-flex justify-content-center text-bold">Experience</div>
+                <div class="d-flex wrap-align-center">
+                        <div class="col-5 d-flex flex-column wrap-align-center" id="pcb-description">
+                            <div class="subtitle blue-400 mb-3">Self Designed PCB</div>
+                            <div class="text-bold mt-3">
+                                <p>Designed and built a custom PCB for LRA actuation, </p>
+                                <p>featuring USB interfacing for seamless device integration.</p>
+                            </div>
+                        </div>
+                        <div class="col-7 d-flex wrap-align-center pcb-canvas" id="pcb-gltf-model"></div>    
+                </div>
+            </section>
+                
+
+
+            <section class="contact mt-5 pt-5" id="contact">
+                <div class="subtitle d-flex justify-content-center text-bold">Contact</div>
+            </section>
+
 
         </div>
         
 
-    </div>
-
-    <div id="pcb-display">
-        <div class="col-md" id="pcb-gltf-model"></div>
-        
     </div>
 
     <!-- script import -->

@@ -7624,7 +7624,7 @@ textarea.form-control-lg {
   width: 100vw !important;
 }
 
-.min-vw-100 {
+.min-vw-100, .sticky {
   min-width: 100vw !important;
 }
 
@@ -7656,7 +7656,7 @@ textarea.form-control-lg {
   height: 100vh !important;
 }
 
-.min-vh-100, .full-page {
+.min-vh-100, .at-least-full-page {
   min-height: 100vh !important;
 }
 
@@ -7832,7 +7832,7 @@ textarea.form-control-lg {
   order: 6 !important;
 }
 
-.m-0 {
+.m-0, .img-parent-element {
   margin: 0 !important;
 }
 
@@ -8042,7 +8042,7 @@ textarea.form-control-lg {
   margin-left: auto !important;
 }
 
-.p-0 {
+.p-0, .img-parent-element {
   padding: 0 !important;
 }
 
@@ -11980,10 +11980,27 @@ textarea.form-control-lg {
   color: #9ec5fe;
 }
 
-.blue {
+.blue-400 {
   color: #3d8bfd;
 }
 
 .half-page {
   min-height: 50vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+img.img-fluid {
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+img.img-fluid.animate-in {
+  opacity: 1;
+  transform: scale(1);
 }/*# sourceMappingURL=util.css.map */

@@ -2,6 +2,22 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/gltfLoader';
 
+function resizeRenderer(renderer, camera, containerId) {
+    const pcbModel = document.getElementById(containerId);
+    if (!pcbModel) { 
+        console.log(containerId, 'not found!');
+        return;
+    }
+
+    const rect = pcbModel.getBoundingClientRect();
+
+    console.log(rect.width, rect.height);
+
+    renderer.setSize(rect.width, rect.height);
+    camera.aspect = rect.width / rect.height;
+    camera.updateProjectionMatrix();
+}
+
 function initThreeScene(element_id)
 {
     const scene = new THREE.Scene();
@@ -10,7 +26,7 @@ function initThreeScene(element_id)
     camera.position.set(0, 0, 3.5);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true});
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    resizeRenderer(renderer, camera, element_id);
     document.getElementById(element_id).appendChild(renderer.domElement);
 
     return { scene, camera, renderer };
@@ -83,4 +99,4 @@ function setupAnimation(model, renderer, scene, camera) {
     animate();
 }
 
-export { initThreeScene, loadPcbModel };
+export { initThreeScene, loadPcbModel, resizeRenderer };

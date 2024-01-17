@@ -13,6 +13,7 @@
 body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
+    font-family: sans-serif;
 }
 
 ///////////////////////////////////////////////////
@@ -22,7 +23,7 @@ body {
 // home cover
 .home-cover {
     background-color: var(--main-bg-color);
-    @extend .full-page;
+    @extend .at-least-full-page;
 }
 
 .home-cover .main-title {
@@ -42,13 +43,59 @@ body {
     z-index: $zindex-fixed;
 }
 
-// who am i
-.who-am-i {
-    @extend .full-page;
+// navbar
+#navbar {
+    transition: border-radius 0.3s ease-in-out;
 }
 
-// three display
-#pcb-gltf-model {
+.navbar-btn {
+    transition: color 0.3s ease-in-out;
+
+    @extend .btn;
+    @extend .fs-4;
+    @extend .text-bold;
+}
+
+// font animation
+.navbar-btn:hover {
+    color: $blue-400;
+}
+
+// about
+.about {
+    @extend .at-least-full-page;
+}
+
+.about-card {
+    overflow: hidden;
+    margin: auto; // 添加这个使得 .about-card 在其父元素中居中
+    max-width: 60vw;
+
+    @extend .p-0;
+    @extend .d-flex;
+    @extend .wrap-align-center;
+    @extend .card;
+    @extend .rounded-5;
+}
+
+.img-fluid {
+    object-fit: cover; /* 覆盖容器，保持宽高比 */
+    width: 100%; /* 宽度适应容器 */
+    height: 100%; /* 高度适应容器 */
+}
+
+// experience
+.experience {
+    @extend .at-least-full-page;
+}
+
+// contact
+.contact {
+    @extend .at-least-full-page;
+}
+
+// pcb display
+.pcb-canvas {
     color: var(--main-font-color);
-    display: block;
+    min-height: 65vh;
 }
